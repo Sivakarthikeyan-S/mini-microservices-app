@@ -14,21 +14,23 @@ const CommentCreate = ({ postId }) => {
         setContent('');
     };
 
-    return <div>
-        <form onSubmit={onSubmit}>
-            <div className="form-group">
+    return (
+        <div>
+            <form onSubmit={onSubmit}>
+                <div className="form-group">
+                    <div className="p-2">
+                        <label className="">New Comment :</label>
+                    </div>
+                    <div className="p-2 w-25">
+                        <input value={content} onChange={e => setContent(e.target.value)} className="form-control" />
+                    </div>
+                </div>
                 <div className="p-2">
-                    <label className="">New Comment :</label>
+                    <button className="btn btn-primary">Submit</button>
                 </div>
-                <div className="p-2 w-25">
-                    <input value={content} onChange={e => setContent(e.target.value)} className="form-control" />
-                </div>
-            </div>
-            <div className="p-2">
-                <button className="btn btn-primary">Submit</button>
-            </div>
-        </form>
-    </div>;
+            </form>
+        </div>
+    );
 };
 
 export default CommentCreate;
