@@ -24,4 +24,3 @@
 - kubectl delete pod [ pod_name ]
 - kubectl apply -f [ config file name ]
 - kubectl describe pod [ pod_name ]
-- 
