@@ -24,3 +24,10 @@
 - kubectl delete pod [ pod_name ]
 - kubectl apply -f [ config file name ]
 - kubectl describe pod [ pod_name ]
+
+# Deployment Commands
+
+- kubectl get deployments
+- kubectl describe deployment [ depl name ]
+- kubectl apply -f [ config file name ]
+- kubectl delete deployment [ depl_name ]
